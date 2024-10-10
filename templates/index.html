@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація користувача</title>
+</head>
+<body>
+    <h1>Реєстрація користувача</h1>
+
+    <!-- Вивід IP та іншої інформації -->
+    <div>
+        <p><strong>IP сервера:</strong> {{ server_ip }}</p>
+    </div>
+
+    <!-- Форма реєстрації користувача -->
+    <form method="POST" action="/register">
+        <input type="text" name="username" placeholder="Ім'я користувача" required>
+        <button type="submit">Зареєструватися</button>
+    </form>
+</body>
+</html>
